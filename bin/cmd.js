@@ -93,7 +93,7 @@ function onResult (err, result) {
 
   result.results.forEach(function (result) {
     result.messages.forEach(function (message) {
-      console.error(
+      console.log(
         '  %s:%d:%d: %s%s',
         result.filePath, message.line || 0, message.column || 0, message.message,
         argv.verbose ? ' (' + message.ruleId + ')' : ''
